@@ -1,0 +1,199 @@
+@screen-xs: 480px;
+@screen-xs-min: @screen-xs;
+@screen-phone: @screen-xs-min;
+@screen-sm: 768px;
+@screen-sm-min: @screen-sm;
+@screen-tablet: @screen-sm-min;
+@screen-md: 992px;
+@screen-md-min: @screen-md;
+@screen-desktop: @screen-md-min;
+@screen-lg: 1200px;
+@screen-lg-min: @screen-lg;
+@screen-lg-desktop: @screen-lg-min;
+@screen-xs-max: (@screen-sm-min - 1);
+@screen-sm-max: (@screen-md-min - 1);
+@screen-md-max: (@screen-lg-min - 1);
+
+@red: #e4231f;
+@pink: #f6c4dc;
+@yellow: #ffff55;
+
+@font-regular: 'Roboto', sans-serif;
+@font-condensed: 'Roboto Condensed', sans-serif;
+@font-mono: 'Roboto Mono', monospace;
+
+/*
+ * Responsive text aligning
+ * http://ohryan.ca/2014/08/14/set-responsive-text-alignment-bootstrap-3/
+ */
+.text-xs-left { text-align: left; }
+.text-xs-right { text-align: right; }
+.text-xs-center { text-align: center; }
+.text-xs-justify { text-align: justify; }
+
+@media (min-width: @screen-sm-min) {
+  .text-sm-left { text-align: left; }
+  .text-sm-right { text-align: right; }
+  .text-sm-center { text-align: center; }
+  .text-sm-justify { text-align: justify; }
+}
+
+@media (min-width: @screen-md-min) {
+  .text-md-left { text-align: left; }
+  .text-md-right { text-align: right; }
+  .text-md-center { text-align: center; }
+  .text-md-justify { text-align: justify; }
+}
+
+@media (min-width: @screen-lg-min) {
+  .text-lg-left { text-align: left; }
+  .text-lg-right { text-align: right; }
+  .text-lg-center { text-align: center; }
+  .text-lg-justify { text-align: justify; }
+}
+html {
+	font-size: 12px;
+}
+
+body {
+	font-family: @font-condensed;
+	font-size: 1.8rem;
+}
+
+img {
+	max-width: 100%;
+}
+
+a:link, a:visited, a:active, a:hover {
+	text-decoration: none;
+}
+
+.big {
+	font-size: 3.5rem;
+	font-weight: bold;
+}
+
+.mono {
+	font-family: @font-mono;
+}
+
+.title {
+	font-family: @font-mono;
+	font-size: 1.8rem;
+	font-weight: bold;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.slice {
+	position: relative;
+	overflow: hidden;
+}
+
+.table-container {
+	position: relative;
+	display: table;
+	width: 100%;
+	height: 100%;
+}
+.table-cell {
+	position: relative;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.button {
+	position: relative;
+	z-index: 20;
+	padding: 5px 10px;
+	border: solid 3px @pink;
+	font-weight: bold;
+	background: @red;
+	box-shadow: -3px 3px 0px @pink;
+	&:active {
+		left: -3px;
+		top: 3px;
+		box-shadow: none;
+	}
+}
+
+#header {
+	background: @pink;
+}
+
+#store {
+	background: @red;
+	padding-top: 98px;
+	padding-bottom: 35px;
+	color: @pink;
+	a:link, a:visited, a:active {
+		color: @pink;
+		text-decoration: none;
+	}
+	a:hover {
+		color: @pink;
+	}
+	&:before {
+		content: '';
+		border-top: 100px solid @pink;
+		border-left: 100vw solid transparent;
+	}
+	.big {
+		letter-spacing: 0.1em;
+	}
+}
+
+#about {
+	background: @yellow;
+	color: @red;
+	padding: 25px 0;
+	.title {
+		margin-bottom: 35px;
+	}
+	.big {
+		margin-bottom: 35px;
+	}
+	.timeline {
+		padding: 35px 0;
+	}
+	.photos {
+		padding: 35px 0;
+		.col-sm-3 {
+			padding: 5px;
+		}
+		img {
+			width: 100%;
+		}
+	}
+	.partners {
+		font-size: 1.9rem;
+	}
+	.partner-logo {
+		height: 200px;
+	}
+}
+
+#footer {
+	padding: 35px 0 70px 0;
+	color: @red;
+	background-size: 40px 40px;
+	background-image: linear-gradient(to right, #a0d8f6 1px, transparent 1px),
+		linear-gradient(#a0d8f6 1px, transparent 1px);
+	a:link, a:visited, a:active {
+		color: @red;
+	}
+	.contact, .social-media, .qmh {
+		margin-bottom: 35px;
+	}
+	.social-media {
+		li {
+			margin: 15px 0;
+			white-space: normal;
+		}
+		.logo {
+			margin-right: 10px;
+		}
+	}
+}
