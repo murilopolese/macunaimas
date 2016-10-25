@@ -125,8 +125,30 @@ a:link, a:visited, a:active, a:hover {
 #header {
 	background: @pink;
 	color: @red;
-	.carousel {
-		height: 500px;
+	#macunaimas-slider {
+		.carousel {
+			min-height: 500px;
+		}
+		.carousel-inner,
+		.carousel-controls {
+			min-height: 500px;
+		}
+		.carousel-controls {
+			a {
+				position: relative;
+				display: inline-block;
+				margin-top: 200px;
+			}
+		}
+	}
+	#macunaimas-slider-mobile {
+		.carousel-indicators {
+			position: relative;
+			li {
+				width: 20px;
+				height: 20px;
+			}
+		}
 	}
 	.carousel-control.right,
 	.carousel-control.left {
@@ -139,17 +161,6 @@ a:link, a:visited, a:active, a:hover {
 		cursor: -webkit-grab;
 		cursor: -moz-grab;
 		&:hover {
-		}
-	}
-	.carousel-inner,
-	.carousel-controls {
-		height: 500px;
-	}
-	.carousel-controls {
-		a {
-			position: relative;
-			display: inline-block;
-			margin-top: 200px;
 		}
 	}
 	.gal1 { left: 10px; top: 45px; }

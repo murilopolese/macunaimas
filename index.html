@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title>Macunaimãs</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-		<link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed:400,700|Roboto+Mono:400,700" rel="stylesheet">
-		<link rel="stylesheet" href="libs/normalize.css" charset="utf-8">
-		<link rel="stylesheet" href="libs/bootstrap.min.css" charset="utf-8">
-		<link rel="stylesheet" href="libs/jquery-ui.min.css" charset="utf-8">
-		<link rel="stylesheet" href="main.css" charset="utf-8">
-	</head>
-	<body>
-		<div class="slice" id="header">
 
-			<div class="container">
+<head>
+	<meta charset="utf-8">
+	<title>Macunaimãs</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed:400,700|Roboto+Mono:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="libs/normalize.css" charset="utf-8">
+	<link rel="stylesheet" href="libs/bootstrap.min.css" charset="utf-8">
+	<link rel="stylesheet" href="libs/jquery-ui.min.css" charset="utf-8">
+	<link rel="stylesheet" href="main.css" charset="utf-8">
+</head>
 
-				<div class="row">
-					<div class="col-xs-12">
-						<h1 class="text-center">
+<body>
+	<div class="slice" id="header">
+
+		<div class="container">
+
+			<div class="row">
+				<div class="col-xs-12">
+					<h1 class="text-center">
 							<img src="img/MACUNAIMAS-LOGO.png" alt="" />
 							<span class="hidden-xs" style="float: right;">
 								<a href="https://www.instagram.com/que_mal_ha/">
@@ -28,291 +30,317 @@
 								</a>
 							</span>
 						</h1>
+				</div>
+			</div>
+
+
+			<div id="macunaimas-slider-mobile" class="carousel slide visible-xs">
+
+				<div class="row">
+					<div class="col-xs-12">
+
+						<div class="carousel-inner" role="listbox">
+							<div class="item active">
+								<img src="img/gal.png" alt="" />
+							</div>
+							<div class="item">
+								<img src="img/malu.png" alt="" />
+							</div>
+							<div class="item">
+								<img src="img/tom.png" alt="" />
+							</div>
+							<div class="item">
+								<img src="img/xica.png" alt="" />
+							</div>
+						</div>
 					</div>
 				</div>
 
 				<div class="row">
+					<div class="col-xs-12">
+						<ol class="carousel-indicators">
+							<li data-target="#macunaimas-slider-mobile" data-slide-to="0" class="active"></li>
+							<li data-target="#macunaimas-slider-mobile" data-slide-to="1"></li>
+							<li data-target="#macunaimas-slider-mobile" data-slide-to="2"></li>
+							<li data-target="#macunaimas-slider-mobile" data-slide-to="3"></li>
+						</ol>
+					</div>
+				</div>
+			</div>
 
-					<div id="macunaimas-slider" class="macunaimas carousel slide hidden-xs">
+			<div id="macunaimas-slider" class="macunaimas carousel slide hidden-xs">
 
+				<div class="row">
+					<div class="col-xs-1 carousel-controls big">
+						<a href="#macunaimas-slider" role="button" data-slide="prev">
+							<img src="img/ARROW-LEFT.png" alt="" />
+						</a>
+					</div>
+
+					<div class="col-xs-10">
 						<div class="row">
-							<div class="col-xs-1 carousel-controls big">
-								<a href="#macunaimas-slider" role="button" data-slide="prev">
-									<img src="img/ARROW-LEFT.png" alt="" />
-								</a>
-							</div>
-
-							<div class="col-xs-10">
-								<div class="row">
-									<div class="carousel-inner" role="listbox">
-										<div class="item active">
-											<div class="col-sm-12 col-md-10 col-lg-8 col-md-offset-1 col-lg-offset-2">
-												<img class="draggable gal1" src="img/galeria/GAL-01.png">
-												<img class="draggable gal2" src="img/galeria/GAL-02.png">
-												<img class="draggable gal3" src="img/galeria/GAL-03.png">
-												<img class="draggable gal4" src="img/galeria/GAL-04.png">
-												<img class="draggable gal5" src="img/galeria/GAL-05.png">
-												<img class="draggable gal6" src="img/galeria/GAL-06.png">
-											</div>
-										</div>
-										<div class="item">
-											<div class="col-sm-12 col-md-10 col-lg-8 col-md-offset-1 col-lg-offset-2">
-												<img class="draggable malu1" src="img/galeria/MALU-01.png">
-												<img class="draggable malu2" src="img/galeria/MALU-02.png">
-												<img class="draggable malu3" src="img/galeria/MALU-03.png">
-												<img class="draggable malu4" src="img/galeria/MALU-04.png">
-												<img class="draggable malu5" src="img/galeria/MALU-05.png">
-												<img class="draggable malu6" src="img/galeria/MALU-06.png">
-											</div>
-										</div>
-										<div class="item">
-											<div class="col-sm-12 col-md-10 col-lg-8 col-md-offset-1 col-lg-offset-2">
-												<img class="draggable tom1" src="img/galeria/TOM-01.png">
-												<img class="draggable tom2" src="img/galeria/TOM-02.png">
-												<img class="draggable tom3" src="img/galeria/TOM-03.png">
-												<img class="draggable tom4" src="img/galeria/TOM-04.png">
-												<img class="draggable tom5" src="img/galeria/TOM-05.png">
-												<img class="draggable tom6" src="img/galeria/TOM-06.png">
-											</div>
-										</div>
-										<div class="item">
-											<div class="col-sm-12 col-md-10 col-lg-8 col-md-offset-1 col-lg-offset-2">
-												<img class="draggable xica1" src="img/galeria/XICA-01.png">
-												<img class="draggable xica2" src="img/galeria/XICA-02.png">
-												<img class="draggable xica3" src="img/galeria/XICA-03.png">
-												<img class="draggable xica4" src="img/galeria/XICA-04.png">
-												<img class="draggable xica5" src="img/galeria/XICA-05.png">
-												<img class="draggable xica6" src="img/galeria/XICA-06.png">
-											</div>
-										</div>
+							<div class="carousel-inner" role="listbox">
+								<div class="item active">
+									<div class="col-sm-12 col-md-10 col-lg-8 col-md-offset-1 col-lg-offset-2">
+										<img class="draggable gal1" src="img/galeria/GAL-01.png">
+										<img class="draggable gal2" src="img/galeria/GAL-02.png">
+										<img class="draggable gal3" src="img/galeria/GAL-03.png">
+										<img class="draggable gal4" src="img/galeria/GAL-04.png">
+										<img class="draggable gal5" src="img/galeria/GAL-05.png">
+										<img class="draggable gal6" src="img/galeria/GAL-06.png">
+									</div>
+								</div>
+								<div class="item">
+									<div class="col-sm-12 col-md-10 col-lg-8 col-md-offset-1 col-lg-offset-2">
+										<img class="draggable malu1" src="img/galeria/MALU-01.png">
+										<img class="draggable malu2" src="img/galeria/MALU-02.png">
+										<img class="draggable malu3" src="img/galeria/MALU-03.png">
+										<img class="draggable malu4" src="img/galeria/MALU-04.png">
+										<img class="draggable malu5" src="img/galeria/MALU-05.png">
+										<img class="draggable malu6" src="img/galeria/MALU-06.png">
+									</div>
+								</div>
+								<div class="item">
+									<div class="col-sm-12 col-md-10 col-lg-8 col-md-offset-1 col-lg-offset-2">
+										<img class="draggable tom1" src="img/galeria/TOM-01.png">
+										<img class="draggable tom2" src="img/galeria/TOM-02.png">
+										<img class="draggable tom3" src="img/galeria/TOM-03.png">
+										<img class="draggable tom4" src="img/galeria/TOM-04.png">
+										<img class="draggable tom5" src="img/galeria/TOM-05.png">
+										<img class="draggable tom6" src="img/galeria/TOM-06.png">
+									</div>
+								</div>
+								<div class="item">
+									<div class="col-sm-12 col-md-10 col-lg-8 col-md-offset-1 col-lg-offset-2">
+										<img class="draggable xica1" src="img/galeria/XICA-01.png">
+										<img class="draggable xica2" src="img/galeria/XICA-02.png">
+										<img class="draggable xica3" src="img/galeria/XICA-03.png">
+										<img class="draggable xica4" src="img/galeria/XICA-04.png">
+										<img class="draggable xica5" src="img/galeria/XICA-05.png">
+										<img class="draggable xica6" src="img/galeria/XICA-06.png">
 									</div>
 								</div>
 							</div>
-
-							<div class="col-xs-1 carousel-controls">
-								<a href="#macunaimas-slider" role="button" data-slide="next">
-									<img src="img/ARROW-RIGHT.png" alt="" />
-								</a>
-							</div>
 						</div>
+					</div>
 
+					<div class="col-xs-1 carousel-controls">
+						<a href="#macunaimas-slider" role="button" data-slide="next">
+							<img src="img/ARROW-RIGHT.png" alt="" />
+						</a>
+					</div>
+
+				</div>
+
+				<div class="row">
+					<div class="col-xs-12">
 						<ol class="carousel-indicators">
 							<li data-target="#macunaimas-slider" data-slide-to="0" class="active"></li>
 							<li data-target="#macunaimas-slider" data-slide-to="1"></li>
 							<li data-target="#macunaimas-slider" data-slide-to="2"></li>
 							<li data-target="#macunaimas-slider" data-slide-to="3"></li>
 						</ol>
-
 					</div>
-
 				</div>
 
+			</div>
+
+		</div>
+	</div>
+
+	<div class="slice" id="store">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-2 col-sm-offset-3 text-center">
+					<img src="img/ICONE-LOJINHA.png" alt="">
+				</div>
+				<div class="col-xs-12 col-sm-4 text-xs-center text-sm-left">
+					<p><a class="big" href="#">loja.qmh.art.br</a></p>
+					<p><a class="button" href="#">leve para casa</a></p>
+				</div>
 			</div>
 		</div>
+	</div>
 
-		<div class="slice" id="store">
-			<div class="container">
-				<div class="row">
-					<div class="col-xs-12 col-sm-2 col-sm-offset-3 text-center">
-						<img src="img/ICONE-LOJINHA.png" alt="">
-					</div>
-					<div class="col-xs-12 col-sm-4 text-xs-center text-sm-left">
-						<p><a class="big" href="#">loja.qmh.art.br</a></p>
-						<p><a class="button" href="#">leve para casa</a></p>
-					</div>
+	<div class="slice" id="about">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 text-center">
+					<p class="title">SAIBA MAIS</p>
+				</div>
+				<div class="col-xs-12 col-sm-8 col-sm-offset-2">
+					<p class="big text-xs-center">
+						Os Macunaímãs são brinquedos interativos que têm como referência a diversidade cultural brasileira.
+					</p>
+					<p>
+						Os Macunaímãs são uma marca de ímãs de geladeira ilustrados que visa crianças, jovens e adultos como público-alvo. Tem como referência a diversidade cultural e étnica brasileira, expressa em coleções de personagens.
+					</p>
+					<p>
+						Desenvolvido pela designer Juliana Lisboa, o projeto nasceu em 2011 do desejo de transformar em brinquedo representações de pessoas e suas diferentes formas de beleza. Resultam em kits de ímãs de geladeira, que vem com personagens e diversas peças - roupas
+						e adereços - possíveis de serem manipuladas e trocadas. Nas coleções realizadas foram retratados temas como a valorização da mulher, nudismo, diversidade de gênero, cultura negra urbana, cicloativismo, entre outros. Os Macunaímãs participaram do
+						Prêmio Movimento HotSpot em 2014 pela categoria Ilustração e já circularam por diversas feiras de economia criativa pelo Brasil.
+					</p>
+				</div>
+			</div>
+			<div class="row hidden-xs">
+				<div class="col-xs-12 timeline text-center">
+					<img src="img/LINHA-DO-TEMPO.png" alt="">
 				</div>
 			</div>
 		</div>
-
-		<div class="slice" id="about">
-			<div class="container">
-				<div class="row">
-					<div class="col-xs-12 text-center">
-						<p class="title">SAIBA MAIS</p>
-					</div>
-					<div class="col-xs-12 col-sm-8 col-sm-offset-2">
-						<p class="big text-xs-center">
-							Os Macunaímãs são brinquedos interativos que têm como referência
-							a diversidade cultural brasileira.
-						</p>
-						<p>
-							Os Macunaímãs são uma marca de ímãs de geladeira ilustrados que
-							visa crianças, jovens e adultos como público-alvo. Tem como
-							referência a diversidade cultural e étnica brasileira, expressa
-							em coleções de personagens.
-						</p>
-						<p>
-							Desenvolvido pela designer Juliana Lisboa, o projeto nasceu em
-							2011 do desejo de transformar em brinquedo representações de
-							pessoas e suas diferentes formas de beleza. Resultam em kits de
-							ímãs de geladeira, que vem com personagens e diversas peças -
-							roupas e adereços - possíveis de serem manipuladas e trocadas.
-							Nas coleções realizadas foram retratados temas como a valorização
-							da mulher, nudismo, diversidade de gênero, cultura negra urbana,
-							cicloativismo, entre outros. Os Macunaímãs participaram do Prêmio
-							Movimento HotSpot em 2014 pela categoria Ilustração e já
-							circularam por diversas feiras de economia criativa pelo Brasil.
-						</p>
-					</div>
+		<div class="hidden-xs container photos">
+			<div class="row">
+				<div class="col-sm-3">
+					<img src="img/001.png" alt="" />
 				</div>
-				<div class="row hidden-xs">
-					<div class="col-xs-12 timeline text-center">
-						<img src="img/LINHA-DO-TEMPO.png" alt="">
-					</div>
+				<div class="col-sm-3">
+					<img src="img/002.jpg" alt="" />
 				</div>
-			</div>
-			<div class="hidden-xs container photos">
-				<div class="row">
-					<div class="col-sm-3">
-						<img src="img/001.png" alt="" />
-					</div>
-					<div class="col-sm-3">
-						<img src="img/002.jpg" alt="" />
-					</div>
-					<div class="col-sm-3">
-						<img src="img/003.jpg" alt="" />
-					</div>
-					<div class="col-sm-3">
-						<img src="img/004.jpg" alt="" />
-					</div>
-					<div class="col-sm-3">
-						<img src="img/005.jpg" alt="" />
-					</div>
-					<div class="col-sm-3">
-						<img src="img/006.jpg" alt="" />
-					</div>
-					<div class="col-sm-3">
-						<img src="img/007.jpg" alt="" />
-					</div>
-					<div class="col-sm-3">
-						<img src="img/008.jpg" alt="" />
-					</div>
-					<div class="col-sm-3">
-						<img src="img/009.jpg" alt="" />
-					</div>
-					<div class="col-sm-3">
-						<img src="img/010.jpg" alt="" />
-					</div>
-					<div class="col-sm-3">
-						<img src="img/011.jpg" alt="" />
-					</div>
-					<div class="col-sm-3">
-						<img src="img/012.jpg" alt="" />
-					</div>
-					<div class="col-sm-3">
-						<img src="img/013.jpg" alt="" />
-					</div>
-					<div class="col-sm-3">
-						<img src="img/014.jpg" alt="" />
-					</div>
-					<div class="col-sm-3">
-						<img src="img/015.jpg" alt="" />
-					</div>
-					<div class="col-sm-3">
-						<img src="img/016.jpg" alt="" />
-					</div>
-					<div class="col-sm-3">
-						<img src="img/017.jpg" alt="" />
-					</div>
-					<div class="col-sm-3">
-						<img src="img/018.jpg" alt="" />
-					</div>
-					<div class="col-sm-3">
-						<img src="img/019.jpg" alt="" />
-					</div>
-					<div class="col-sm-3">
-						<img src="img/020.jpg" alt="" />
-					</div>
-					<div class="col-sm-3">
-						<img src="img/021.jpg" alt="" />
-					</div>
-					<div class="col-sm-3">
-						<img src="img/022.jpg" alt="" />
-					</div>
-					<div class="col-sm-3">
-						<img src="img/023.jpg" alt="" />
-					</div>
-					<div class="col-sm-3">
-						<img src="img/024.jpg" alt="" />
-					</div>
+				<div class="col-sm-3">
+					<img src="img/003.jpg" alt="" />
+				</div>
+				<div class="col-sm-3">
+					<img src="img/004.jpg" alt="" />
+				</div>
+				<div class="col-sm-3">
+					<img src="img/005.jpg" alt="" />
+				</div>
+				<div class="col-sm-3">
+					<img src="img/006.jpg" alt="" />
+				</div>
+				<div class="col-sm-3">
+					<img src="img/007.jpg" alt="" />
+				</div>
+				<div class="col-sm-3">
+					<img src="img/008.jpg" alt="" />
+				</div>
+				<div class="col-sm-3">
+					<img src="img/009.jpg" alt="" />
+				</div>
+				<div class="col-sm-3">
+					<img src="img/010.jpg" alt="" />
+				</div>
+				<div class="col-sm-3">
+					<img src="img/011.jpg" alt="" />
+				</div>
+				<div class="col-sm-3">
+					<img src="img/012.jpg" alt="" />
+				</div>
+				<div class="col-sm-3">
+					<img src="img/013.jpg" alt="" />
+				</div>
+				<div class="col-sm-3">
+					<img src="img/014.jpg" alt="" />
+				</div>
+				<div class="col-sm-3">
+					<img src="img/015.jpg" alt="" />
+				</div>
+				<div class="col-sm-3">
+					<img src="img/016.jpg" alt="" />
+				</div>
+				<div class="col-sm-3">
+					<img src="img/017.jpg" alt="" />
+				</div>
+				<div class="col-sm-3">
+					<img src="img/018.jpg" alt="" />
+				</div>
+				<div class="col-sm-3">
+					<img src="img/019.jpg" alt="" />
+				</div>
+				<div class="col-sm-3">
+					<img src="img/020.jpg" alt="" />
+				</div>
+				<div class="col-sm-3">
+					<img src="img/021.jpg" alt="" />
+				</div>
+				<div class="col-sm-3">
+					<img src="img/022.jpg" alt="" />
+				</div>
+				<div class="col-sm-3">
+					<img src="img/023.jpg" alt="" />
+				</div>
+				<div class="col-sm-3">
+					<img src="img/024.jpg" alt="" />
 				</div>
 			</div>
-			<div class="container">
-				<div class="row">
+		</div>
+		<div class="container">
+			<div class="row">
 
-					<div class="col-xs-12 col-sm-8 col-sm-offset-2 text-xs-center">
-						<p class="text-sm-left hidden-sm hidden-md hidden-lg"><strong>parceiros</strong></p>
-						<p class="text-sm-left hidden-xs">parceiros</p>
-					</div>
+				<div class="col-xs-12 col-sm-8 col-sm-offset-2 text-xs-center">
+					<p class="text-sm-left hidden-sm hidden-md hidden-lg"><strong>parceiros</strong></p>
+					<p class="text-sm-left hidden-xs">parceiros</p>
+				</div>
 
-					<div class="partner-logo col-sm-2 col-sm-offset-2 text-sm-left text-xs-center">
-						<div class="table-container">
-							<div class="table-cell">
-								<a href="http://oparque.art.br/">
-									<img src="img/LOGO-OPARQUE.png" alt="">
-								</a>
-							</div>
+				<div class="partner-logo col-sm-2 col-sm-offset-2 text-sm-left text-xs-center">
+					<div class="table-container">
+						<div class="table-cell">
+							<a href="http://oparque.art.br/">
+								<img src="img/LOGO-OPARQUE.png" alt="">
+							</a>
 						</div>
 					</div>
-					<div class="partner-logo col-sm-4">
-						<div class="table-container text-sm-center text-xs-center">
-							<div class="table-cell">
-								<a href="https://www.facebook.com/projetoraizforte/?fref=ts">
-									<img src="img/LOGO-RAIZ-FORTE.png" alt="">
-								</a>
-							</div>
+				</div>
+				<div class="partner-logo col-sm-4">
+					<div class="table-container text-sm-center text-xs-center">
+						<div class="table-cell">
+							<a href="https://www.facebook.com/projetoraizforte/?fref=ts">
+								<img src="img/LOGO-RAIZ-FORTE.png" alt="">
+							</a>
 						</div>
 					</div>
-					<div class="partner-logo col-sm-2">
-						<div class="table-container text-sm-right text-xs-center">
-							<div class="table-cell">
-								<a href="https://www.facebook.com/studio-et%C3%A1-1609809252640192/?fref=ts">
-									<img src="img/LOGO-ETA.png" alt="">
-								</a>
-							</div>
+				</div>
+				<div class="partner-logo col-sm-2">
+					<div class="table-container text-sm-right text-xs-center">
+						<div class="table-cell">
+							<a href="https://www.facebook.com/studio-et%C3%A1-1609809252640192/?fref=ts">
+								<img src="img/LOGO-ETA.png" alt="">
+							</a>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+	</div>
 
-		<div class="slice" id="footer">
-			<div class="container">
-				<div class="row text-xs-center text-sm-left">
-					<div class="col-xs-12 col-sm-6 contact">
-						<p class="big">Quer saber mais sobre o projeto? Pode falar!</p>
-						<p class="mono title">
-							<a href="mailto:contato@macunaimas.com.br">contato@macunaimas.com.br</a>
-						</p>
-					</div>
-					<div class="col-xs-12 col-sm-4 social-media">
-						<ul class="list-unstyled title">
-							<li>
-								<a href="#">
-									<img class="logo" src="img/ICONE-01.png" alt="">loja.qmh.art.br
-								</a>
-							</li>
-							<li>
-								<a href="https://www.instagram.com/que_mal_ha/">
-									<img class="logo" src="img/ICONE-02.png" alt="">@que_mal_ha
-								</a>
-							</li>
-							<li>
-								<a href="https://www.facebook.com/macunaimas/">
-									<img class="logo" src="img/ICONE-3.png" alt="">/quemalha
-								</a>
-							</li>
-						</ul>
-					</div>
-					<div class="col-xs-12 col-sm-2 qmh">
-						<img src="img/UM-PRODUTO-QMH.png" alt="">
-					</div>
+	<div class="slice" id="footer">
+		<div class="container">
+			<div class="row text-xs-center text-sm-left">
+				<div class="col-xs-12 col-sm-6 contact">
+					<p class="big">Quer saber mais sobre o projeto? Pode falar!</p>
+					<p class="mono title">
+						<a href="mailto:contato@macunaimas.com.br">contato@macunaimas.com.br</a>
+					</p>
+				</div>
+				<div class="col-xs-12 col-sm-4 social-media">
+					<ul class="list-unstyled title">
+						<li>
+							<a href="#">
+								<img class="logo" src="img/ICONE-01.png" alt="">loja.qmh.art.br
+							</a>
+						</li>
+						<li>
+							<a href="https://www.instagram.com/que_mal_ha/">
+								<img class="logo" src="img/ICONE-02.png" alt="">@que_mal_ha
+							</a>
+						</li>
+						<li>
+							<a href="https://www.facebook.com/macunaimas/">
+								<img class="logo" src="img/ICONE-3.png" alt="">/quemalha
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-xs-12 col-sm-2 qmh">
+					<img src="img/UM-PRODUTO-QMH.png" alt="">
 				</div>
 			</div>
 		</div>
-		<script type="text/javascript" src="libs/jquery-3.1.1.slim.min.js"></script>
-		<script type="text/javascript" src="libs/jquery-ui.min.js"></script>
-		<script type="text/javascript" src="libs/bootstrap.min.js"></script>
-		<script type="text/javascript" src="main.js"></script>
-	</body>
+	</div>
+	<script type="text/javascript" src="libs/jquery-3.1.1.slim.min.js"></script>
+	<script type="text/javascript" src="libs/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="libs/bootstrap.min.js"></script>
+	<script type="text/javascript" src="main.js"></script>
+</body>
+
 </html>
