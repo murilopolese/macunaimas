@@ -7,10 +7,123 @@
 		<link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed:400,700|Roboto+Mono:400,700" rel="stylesheet">
 		<link rel="stylesheet" href="libs/normalize.css" charset="utf-8">
 		<link rel="stylesheet" href="libs/bootstrap.min.css" charset="utf-8">
+		<link rel="stylesheet" href="libs/jquery-ui.min.css" charset="utf-8">
 		<link rel="stylesheet" href="main.css" charset="utf-8">
 	</head>
 	<body>
 		<div class="slice" id="header">
+
+			<div class="container">
+
+				<div class="row">
+					<div class="col-xs-12">
+						<h1 class="text-center">
+							<img src="img/MACUNAIMAS-LOGO.png" alt="" />
+							<span class="text-right"><img src="img/ICONE-02.png" alt="" /></span>
+							<span class="text-right"><img src="img/ICONE-3.png" alt="" /></span>
+						</h1>
+					</div>
+				</div>
+
+				<div class="row">
+
+					<div id="macunaimas-slider" class="macunaimas carousel slide hidden-xs">
+
+						<div class="row">
+							<div class="col-xs-1 carousel-controls big">
+								<a href="#macunaimas-slider" role="button" data-slide="prev">
+									<img src="img/ARROW-LEFT.png" alt="" />
+								</a>
+							</div>
+
+							<div class="col-xs-10">
+								<div class="row">
+									<div class="carousel-inner" role="listbox">
+										<div class="item active">
+											<div class="col-sm-12 col-md-10 col-lg-8 col-md-offset-1 col-lg-offset-2">
+												<img class="draggable gal1" src="img/galeria/GAL-01.png">
+												<img class="draggable gal2" src="img/galeria/GAL-02.png">
+												<img class="draggable gal3" src="img/galeria/GAL-03.png">
+												<img class="draggable gal4" src="img/galeria/GAL-04.png">
+												<img class="draggable gal5" src="img/galeria/GAL-05.png">
+												<img class="draggable gal6" src="img/galeria/GAL-06.png">
+											</div>
+										</div>
+										<div class="item">
+											<div class="col-sm-12 col-md-10 col-lg-8 col-md-offset-1 col-lg-offset-2">
+												<img class="draggable malu1" src="img/galeria/MALU-01.png">
+												<img class="draggable malu2" src="img/galeria/MALU-02.png">
+												<img class="draggable malu3" src="img/galeria/MALU-03.png">
+												<img class="draggable malu4" src="img/galeria/MALU-04.png">
+												<img class="draggable malu5" src="img/galeria/MALU-05.png">
+												<img class="draggable malu6" src="img/galeria/MALU-06.png">
+											</div>
+										</div>
+										<div class="item">
+											<div class="col-sm-12 col-md-10 col-lg-8 col-md-offset-1 col-lg-offset-2">
+												<img class="draggable tom1" src="img/galeria/TOM-01.png">
+												<img class="draggable tom2" src="img/galeria/TOM-02.png">
+												<img class="draggable tom3" src="img/galeria/TOM-03.png">
+												<img class="draggable tom4" src="img/galeria/TOM-04.png">
+												<img class="draggable tom5" src="img/galeria/TOM-05.png">
+												<img class="draggable tom6" src="img/galeria/TOM-06.png">
+											</div>
+										</div>
+										<div class="item">
+											<div class="col-sm-12 col-md-10 col-lg-8 col-md-offset-1 col-lg-offset-2">
+												<img class="draggable xica1" src="img/galeria/XICA-01.png">
+												<img class="draggable xica2" src="img/galeria/XICA-02.png">
+												<img class="draggable xica3" src="img/galeria/XICA-03.png">
+												<img class="draggable xica4" src="img/galeria/XICA-04.png">
+												<img class="draggable xica5" src="img/galeria/XICA-05.png">
+												<img class="draggable xica6" src="img/galeria/XICA-06.png">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-xs-1 carousel-controls">
+								<a href="#macunaimas-slider" role="button" data-slide="next">
+									<img src="img/ARROW-RIGHT.png" alt="" />
+								</a>
+							</div>
+						</div>
+
+						<ol class="carousel-indicators">
+							<li data-target="#macunaimas-slider" data-slide-to="0" class="active"></li>
+							<li data-target="#macunaimas-slider" data-slide-to="1"></li>
+							<li data-target="#macunaimas-slider" data-slide-to="2"></li>
+							<li data-target="#macunaimas-slider" data-slide-to="3"></li>
+						</ol>
+
+					</div>
+
+					<!--
+					<div class="item item-1">
+
+						<div class="hidden-xs">
+							<div class="caption">
+								<p class="big">
+									série afropunk, MONTE O LOOK DO(A) GAL >>
+								</p>
+							</div>
+
+							<div class="draggables">
+								<img class="draggable gal1" src="img/galeria/GAL-01.png">
+								<img class="draggable gal2" src="img/galeria/GAL-02.png">
+								<img class="draggable gal3" src="img/galeria/GAL-03.png">
+								<img class="draggable gal4" src="img/galeria/GAL-04.png">
+								<img class="draggable gal5" src="img/galeria/GAL-05.png">
+								<img class="draggable gal6" src="img/galeria/GAL-06.png">
+							</div>
+						</div>
+					</div>
+					-->
+
+				</div>
+
+			</div>
 		</div>
 
 		<div class="slice" id="store">
@@ -190,6 +303,7 @@
 			</div>
 		</div>
 		<script type="text/javascript" src="libs/jquery-3.1.1.slim.min.js"></script>
+		<script type="text/javascript" src="libs/jquery-ui.min.js"></script>
 		<script type="text/javascript" src="libs/bootstrap.min.js"></script>
 		<script type="text/javascript" src="main.js"></script>
 	</body>

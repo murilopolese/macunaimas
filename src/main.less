@@ -69,8 +69,11 @@ a:link, a:visited, a:active, a:hover {
 }
 
 .big {
-	font-size: 3.5rem;
+	font-size: 3rem;
 	font-weight: bold;
+	@media (min-width: @screen-sm-min) {
+		font-size: 3.5rem;
+	}
 }
 
 .mono {
@@ -121,6 +124,52 @@ a:link, a:visited, a:active, a:hover {
 
 #header {
 	background: @pink;
+	color: @red;
+	.carousel {
+		height: 500px;
+	}
+	.carousel-control.right,
+	.carousel-control.left {
+		background: none;
+	}
+	.draggable {
+		position: absolute;
+	}
+	.carousel-inner,
+	.carousel-controls {
+		height: 500px;
+	}
+	.carousel-controls {
+		a {
+			position: relative;
+			display: inline-block;
+			margin-top: 200px;
+		}
+	}
+	.gal1 { left: 10px; top: 45px; }
+	.gal2 { left: 412px; top: 0px; }
+	.gal3 { left: 368px; top: 188px; }
+	.gal4 { left: 189px; top: 204px; }
+	.gal5 { left: 242px; top: 105px; }
+	.gal6 { left: 356px; top: 260px; }
+	.malu1 { left: 10px; top: 45px; }
+	.malu2 { left: 412px; top: 0px; }
+	.malu3 { left: 368px; top: 188px; }
+	.malu4 { left: 182px; top: 105px; }
+	.malu5 { left: 242px; top: 105px; }
+	.malu6 { left: 186px; top: 229px; }
+	.tom1 { left: 10px; top: 45px; }
+	.tom2 { left: 447px; top: 50px; }
+	.tom3 { left: 442px; top: 232px; }
+	.tom4 { left: 264px; top: 85px; }
+	.tom5 { left: 201px; top: 163px; }
+	.tom6 { left: 214px; top: 233px; }
+	.xica1 { left: 10px; top: 45px; }
+	.xica2 { left: 358px; top: 167px;}
+	.xica3 { left: 328px; top: 118px; }
+	.xica4 { left: 171px; top: 223px;}
+	.xica5 { left: 246px; top: 106px; }
+	.xica6 { left: 185px; top: 106px; }
 }
 
 #store {
@@ -194,6 +243,9 @@ a:link, a:visited, a:active, a:hover {
 		}
 		.logo {
 			margin-right: 10px;
+		}
+		.title {
+			font-size: 1.7rem;
 		}
 	}
 }
