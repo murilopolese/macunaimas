@@ -1,6 +1,6 @@
 # Macunaimãs
 
-![](https://i.imgur.com/lAWaAiZ.png)
+![](https://i.imgur.com/r23WSvp.png)
 
 Macunaimas are a magnetic toy targeted to kids, youngs and adults. It expresses
 cultural and ethnic diversity through the collection of characters.
